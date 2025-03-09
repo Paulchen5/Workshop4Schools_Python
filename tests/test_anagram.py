@@ -1,10 +1,8 @@
 # pylint: disable=C0114, C0115, C0116
-import importlib as il
 
 from unittest import TestCase
 
-anagram = il.import_module("Exercises.02Anagramm.main")
-is_anagram = anagram.anagramm
+from Exercises._02Anagramm.main import anagramm as is_anagram
 
 
 class TestAnagram(TestCase):

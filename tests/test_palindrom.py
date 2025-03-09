@@ -1,9 +1,7 @@
 # pylint: disable=C0114, C0115, C0116
-import importlib as il
 from unittest import TestCase
 
-palindrom = il.import_module("Exercises.01Palindrom.main")
-is_palindrom = palindrom.palindrom
+from Exercises._01Palindrom.main import palindrom as is_palindrom
 
 
 class TestPalindrom(TestCase):
